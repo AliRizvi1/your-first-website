@@ -38,35 +38,41 @@
 
           <div class="list-group">
 
-            {% for comment in comments %}
-                <div href="#" class="list-group-item flex-column align-items-start">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{ comment['name'] }}</h5>
-                    <small>{{ comment['date'] }}</small>
-                  </div>
-                  <p class="mb-1">
-                    {{ comment['body'] }}
-                  </p>
-                </div>
-            {% endfor %}
-                
+            <!-- Comment loop -->
+            <div href="#" class="list-group-item flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Jason</h5>
+                <small>Nov. 21, 2018</small>
+              </div>
+              <p class="mb-1">
+                  What's up?
+              </p>
+            </div>
+            
+            <div href="#" class="list-group-item flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Sam</h5>
+                <small>Nov. 11, 2018</small>
+              </div>
+              <p class="mb-1">
+                  Nice work!
+              </p>
+            </div>
+
+            <div href="#" class="list-group-item flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">Charlie</h5>
+                <small>Nov. 8, 2018</small>
+              </div>
+              <p class="mb-1">
+                  My favourite artist!
+              </p>
+            </div>
+                  
+
           </div>
 
-          <div class="mt-5">
-            <h3>Leave a comment:</h3>
-            <form action="/comments" method="POST">
-              <label for="name">Your Name:</label><br>
-              <input type="text" name="name">
-              <br>
-              <label for="body">Comment:</label><br>
-              <textarea name="body" cols="80" rows="5"></textarea>
-              <br>
-              <label for="date">Today's Date:</label><br>
-              <input type="text" name="date">
-              <br><br>
-              <input type="submit">
-            </form>
-          </div>
+          <!-- Comment form here -->
         </div>
         
       </section>
