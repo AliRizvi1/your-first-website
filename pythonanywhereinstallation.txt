@@ -1,4 +1,4 @@
-Make an account on pythonanywhere.com
+Make a free beginner account on pythonanywhere.com
 
 Open the "Web" tab
 Click "Add a new web app" on the left
