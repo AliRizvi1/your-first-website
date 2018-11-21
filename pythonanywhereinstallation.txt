@@ -22,14 +22,18 @@ if path not in sys.path:
 from server import app as application
 #END
 
-Open the "Web" tab again
 Set "Virtualenv:" to:
     /home/<username>/.virtualenvs/webenv/
+
+====================================
 
 Open the "Dashboard" tab
 Under "Consoles" in the bottom left, right click "$ Bash" and click "Open link in a new tab"
 Copy-Paste or type:
 	git clone https://github.com/jrobchin/your-first-website.git mysite
+
+
+=====================================
 
 Open the bash console again
 Copy-Paste or type:
