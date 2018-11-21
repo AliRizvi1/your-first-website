@@ -11,13 +11,17 @@ Set "Source code:" to:
 	/home/<username>/mysite
 Click the link beside "WSGI configuration file"
 Replace what you see with:
-	import sys
 
-	path = '/home/<username>/mysite'
-	if path not in sys.path:
-	    sys.path.append(path)
+#START
+import sys
 
-	from server import app as application
+path = '/home/<username>/mysite'
+if path not in sys.path:
+    sys.path.append(path)
+
+from server import app as application
+#END
+
 Open the "Web" tab again
 Set "Virtualenv:" to:
     /home/<username>/.virtualenvs/webenv/
